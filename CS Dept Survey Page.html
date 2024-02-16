@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Department Survey</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="CS Dept.css">
+<style>
+body {
+    background-color: #fefefa; 
+    font-family: Arial, sans-serif;
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:  #fdfdfb;
+      border-radius: 10px;
+      box-shadow: 0px 0px 3px 3px #FFCC33;; /* Light shadow */
+  }    
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header/Home -->
+<header class="heading-box">
+    <h1 class="mb-4">George Mason University</h1>
+    <h2 class="mb-4">CS Department Survey</h2>
+</header>
+
+<!-- Form consisting of all the fields to be shown-->
+<div class="container mt-4">
+    <form>
+        <div class="form-group">
+            <label for="username" class="required-field">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="streetAddress" class="required-field">Street Address:</label>
+            <input type="text" class="form-control" id="streetAddress" placeholder="Enter your street address" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="city" class="required-field">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="state" class="required-field">State:</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter your state" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="zip" class="required-field">Zip:</label>
+                <input type="text" class="form-control" id="zip" placeholder="Enter your zip code" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="telephone" class="required-field">Telephone Number:</label>
+            <input type="tel" class="form-control" id="telephone" placeholder="Enter your telephone number" required>
+        </div>
+        <div class="form-group">
+            <label for="email" class="required-field">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+            <label for="url">URL:</label>
+            <input type="url" class="form-control" id="url" placeholder="Enter URL">
+        </div>
+        <div class="form-group">
+            <label for="surveyDate" class="required-field">Date of Survey:</label>
+            <input type="date" class="form-control" id="surveyDate" required>
+        </div>
+        
+        <!-- Creating checkbox question for most likeable about the campus-->
+        <div class="form-group">
+            <label class="required-field">What did you like most about the campus?</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedStudents" value="students">
+                <label class="form-check-label" for="likedStudents">Students</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedLocation" value="location">
+                <label class="form-check-label" for="likedLocation">Location</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedCampus" value="campus">
+                <label class="form-check-label" for="likedCampus">Campus</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedAtmosphere" value="atmosphere">
+                <label class="form-check-label" for="likedAtmosphere">Atmosphere</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedSports" value="sports">
+                <label class="form-check-label" for="likedSports">Sports</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="likedDormrooms" value="dormrooms">
+                <label class="form-check-label" for="likedlikedDormroomsAtmosphere">Dorm rooms</label>
+            </div>
+      
+        </div>
+        <!-- Creating radio buttons for answering how the student came to know about university-->
+        <div class="form-group">
+            <label class="required-field">How did you become interested in the university?</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interest" id="friend" value="friend">
+                <label class="form-check-label" for="friend">Friends</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interest" id="television" value="television">
+                <label class="form-check-label" for="television">Television</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interest" id="internet" value="internet">
+                <label class="form-check-label" for="internet">Internet</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="interest" id="other" value="other">
+                <label class="form-check-label" for="other">Other</label>
+            </div>
+            
+        </div>
+
+        <!-- Creating additional comments box -->
+        <div class="form-group">
+            <label for="comments">Additional Comments:</label>
+            <textarea class="form-control" id="comments" rows="3" placeholder="Enter your comments"></textarea>
+        </div>
+
+        <!-- Creating recommendation dropdown -->
+        <div class="form-group">
+            <label for="likelihood" class="required-field">Likelihood of recommendation:</label>
+            <select class="form-control" id="likelihood" required>
+                <option value="">Select one</option>
+                <option>Very Likely</option>
+                <option>Likely</option>
+                <option>Unlikely</option>
+            </select>
+        </div>
+
+        <!-- Creating graduation month and year -->
+        <div class="form-group">
+            <label for="gradMonth">High-school graduation month:</label>
+            <input list="gradMonths" class="form-control" id="gradMonth" placeholder="Select or type">
+            <datalist id="gradMonths">
+                <option value="January">
+                <option value="February">
+                <option value="March">    
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+  
+                   
+            </datalist>
+            <label for="gradYear">Year:</label>
+            <input type="text" class="form-control" id="gradYear" placeholder="Enter graduation year">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- To highlight the username field -->
+<script>
+document.getElementById('username').focus();
+</script>
+
+</body>
+</html>

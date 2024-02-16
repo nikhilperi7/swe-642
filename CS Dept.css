@@ -1,0 +1,119 @@
+/* Banner for all the headings in Department page */
+.color-banner { 
+      background-color: #006633; 
+      padding: 5px 20px; 
+      color: white; 
+      display: flex; 
+      border-radius: 5px; 
+      text-align: center;
+      margin: 0 auto;
+      max-width: 80%;
+}
+
+.body{
+      text-align: left;
+      margin :0 auto;
+      max-width: 80%;
+}
+
+.headings{
+      text-align: left;
+      margin :0 auto;
+      max-width: 100%;
+}
+
+.text-color-gmu {
+      color: #006633;
+}
+
+.heading-box {
+      border: 5px solid #006633; 
+      padding: 20px;
+      background-color: rgba(240, 240, 240, 0.5);
+      box-shadow: 0px 0px 2px 2px #FFCC33;
+    }
+    
+.hr-color {
+      width: 975px;
+      border: none; 
+      border-top: 2px solid #FFCC33; 
+    }
+
+
+table.custom-table th {
+      background-color: #FFCC33; 
+      color: #006633; 
+    }
+    
+table.custom-table {
+      width: 100%;
+}
+
+  
+  .heading-box {
+      background-image: url('GMU.png');
+      background-size: cover; 
+      background-position: center;
+      padding: 20px;
+      color: #000;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+  }
+  
+  .heading-box h1, .heading-box h2 {
+      margin: 0;
+  }
+  
+  .form-group label {
+      color: #006633; /* GMU green */
+      font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="url"],
+  .form-group input[type="date"],
+  .form-group select,
+  .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+      resize: vertical;
+  }
+  
+  .form-group .form-check-label {
+      color: #006633; /* GMU green */
+  }
+  
+  .required-field::before {
+      content: '*';
+      color: #FFCC33; /* Yellow color */
+      margin-right: 5px;
+  }
+  
+  .btn-primary {
+      background-color: #006633; /* GMU green */
+      border-color: #006633; /* GMU green */
+      padding: 10px 20px;
+      font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+      background-color: #004d27; /* Darker GMU green */
+      border-color: #004d27; /* Darker GMU green */
+  }
+  
+  .dropdown-menu {
+      background-color: #fff;
+      color: #006633; /* GMU green */
+  }
+  
+  .dropdown-item:hover {
+      background-color: #f8f9fa; /* Light gray background on hover */
+  }
